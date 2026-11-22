@@ -461,36 +461,39 @@ body {
 
 @media (max-width: 600px) {
     .glass-nav {
-        padding: 10px 8px;
+        padding: 7px 8px;
     }
 
     .glass-nav ul {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-        gap: 8px;
-        padding-bottom: 4px;
-        scrollbar-width: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
     }
 
-    .glass-nav ul::-webkit-scrollbar {
-        display: none;
+    .glass-nav li {
+        display: flex;
     }
 
     .glass-nav a {
-        white-space: nowrap;
-        font-size: 0.83rem;
-        padding: 6px 14px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.72rem;
+        line-height: 1.35;
+        padding: 5px 6px;
+        border-radius: 12px;
     }
 
     .container {
-        padding-top: 85px;
+        padding-top: 138px;
         gap: 24px;
     }
 
     .glass-card {
         padding: 26px 18px;
-        scroll-margin-top: 75px;
+        scroll-margin-top: 125px;
         border-radius: 22px;
     }
 
